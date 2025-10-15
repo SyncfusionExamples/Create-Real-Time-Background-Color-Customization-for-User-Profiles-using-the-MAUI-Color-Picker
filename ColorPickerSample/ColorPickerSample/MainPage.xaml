@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:inputs="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+             xmlns:sfavatar="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             xmlns:local="clr-namespace:ColorPickerSample"
+             x:Class="ColorPickerSample.MainPage">
+
+    <Grid RowDefinitions="50,150" Margin="80">
+
+        <sfavatar:SfAvatarView x:Name="avatar" Grid.Row="0" ContentType="AvatarCharacter"
+                               AvatarCharacter="Avatar29" CornerRadius="60"
+                               WidthRequest="120" HeightRequest="120" 
+                               Stroke="Black" StrokeThickness="1">
+        </sfavatar:SfAvatarView>
+
+        <inputs:SfColorPicker x:Name="colorPicker" Grid.Row="1" ColorChanged="PaletteColorChanged"/>
+
+    </Grid>
+
+</ContentPage>
